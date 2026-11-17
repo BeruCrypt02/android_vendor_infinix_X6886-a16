@@ -1,25 +1,14 @@
-# Infinix X6886 vendor tree
+# vendor/x6886
 
-Prebuilt vendor blobs for the Infinix X6886 (HOT 60 Pro+). They were extracted
-from the stock XOS 16 dump for this phone and are committed as-is.
+Blobs pulled from the stock XOS 16 dump for this phone (MT6789,
+BP2A.250605.031.A3, Android 16 / SDK 36), committed as-is on `lineage-24.0`.
+`vendor`, `odm` and the `*_dlkm` contents match the dump byte for byte.
 
-- Device: Infinix X6886 (HOT 60 Pro+)
-- Platform: MediaTek MT6789
-- Stock build: XOS 16 / 155SP15, BP2A.250605.031.A3
-- Stock Android: 16 (SDK 36)
-- Branch: lineage-24.0
-
-## Layout
-
-The `vendor`, `odm` and `*_dlkm` contents match the dump byte for byte. The
-blob list and extraction script live in the device tree at
+The blob list and extractor are in the device tree at
 `device/infinix/x6886/proprietary-files.txt` and
 `device/infinix/x6886/extract-files.py`. Run extraction from there; it writes
-the blobs into this tree.
+into this tree.
 
-## Rules
-
-- Only blobs from the stock dump for this device go here, listed in
-  `device/infinix/x6886/proprietary-files.txt`.
-- Do not modify a blob after extraction.
-- Adding a blob from another device needs explicit approval.
+Nothing goes in here unless it comes from the stock dump for this device and
+is listed in `proprietary-files.txt`. Don't edit a blob after extraction. A blob
+from another device needs explicit approval.
