@@ -1,0 +1,67 @@
+{
+    "otpMap": [
+        {
+            "sensor_id": 33282,
+            "sensorIdx": 0,
+            "mclk": 3,
+            "port": 2,
+            "dir": 0,
+            "bitOrder": 0,
+            "orientation": 90,
+            "horizontalFov": 67,
+            "module_id": 3,
+            "verticalFov": 49,
+            "lsc_start_addr": 6794,
+            "lsc_blockSize": 1868,
+            "lsc_firstPixel": 0,
+            "awb_offset": 6774,
+            "golden_offset": 6780,
+            "awb_checksum_addr": 6786,
+            "af_offset": 8665,
+            "af_checksum_addr": 8677,
+            "af_flag_addr": 8663,
+            "lhbit": 1,
+            "pdafmap": [
+                {
+		   "pdaftype": 1,
+                   "proc1_offset": 8679,
+                   "proc1Size": 496,
+                   "proc2_offset": 9175,
+                   "proc2Size": 1004,
+                   "proc1ChkSum": 10179,
+                   "proc2ChkSum": 10180
+                },
+                {
+		   "pdaftype": 0,
+                   "proc1_offset": 10182,
+                   "proc1Size": 496,
+                   "proc2_offset": 10678,
+                   "proc2Size": 1004,
+                   "proc1ChkSum": 11682,
+                   "proc2ChkSum": 11683
+               }
+            ]
+        },
+        {
+            "sensor_id": 5025,
+            "sensorIdx": 1,
+            "mclk": 0,
+            "port": 0,
+            "dir": 1,
+            "bitOrder": 0,
+            "orientation": 270,
+            "horizontalFov": 63,
+            "verticalFov": 40,
+            "lsc_start_addr": 3473,
+            "lsc_blockSize": 1868,
+            "lsc_firstPixel": 2,
+            "awb_offset": 3459,
+            "golden_offset": 3465,
+            "awb_checksum_addr": 3471,
+            "af_offset": 65535,
+            "af_checksum_addr": 65535,
+            "af_flag_addr": 65535,
+            "lhbit": 1
+        }
+    ]
+}

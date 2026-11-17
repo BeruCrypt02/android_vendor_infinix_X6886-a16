@@ -1,0 +1,18 @@
+{
+    "tran_sensors": [
+        {
+            "type": "als_ml",
+            "parameters": {
+                "screentype": "Screen"
+            }
+        },
+        {
+            "type": "sample_type",
+            "parameters": {
+                "double_params": 0.1,
+                "integer_params": 10,
+                "string_params": "sample_code"
+            }
+        }
+    ]
+}
