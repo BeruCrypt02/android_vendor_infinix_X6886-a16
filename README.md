@@ -1,7 +1,6 @@
 # vendor/x6886
 
-Vendor tree for the Infinix X6886 (MT6789). Every blob comes from this device's
-stock dump and stays byte for byte as extracted.
+Stock blobs for the X6886 (MT6789), taken from the dump for this phone.
 
 | | |
 |---|---|
@@ -32,6 +31,6 @@ Run extraction from there; it writes into this tree.
 
 ## Contributions
 
-Add a file only when it comes from this device's dump and appears in
-`proprietary-files.txt`. Leave extracted blobs untouched. Ask before adding a
-blob from another device.
+Files in this tree come from the X6886 dump and are listed in
+`proprietary-files.txt`. Leave extracted blobs as they are. Blobs from another
+device need approval first.
