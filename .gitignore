@@ -1,0 +1,15 @@
+# build output only - prebuilt blobs are tracked on purpose
+out/
+*.img
+*.zip
+
+# python helpers
+__pycache__/
+*.pyc
+
+# editors / os
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
