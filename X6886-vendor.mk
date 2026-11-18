@@ -1407,6 +1407,27 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/x6886/proprietary/vendor/firmware/st21nfc_fw7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw7.bin \
     vendor/infinix/x6886/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
 
+
+
+# Fingerprint stack (stock FOD), added 2026-11-18
+PRODUCT_COPY_FILES += \
+    vendor/infinix/x6886/proprietary/vendor/lib64/libtran_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtran_hal.so \
+    vendor/infinix/x6886/proprietary/vendor/lib64/libtranlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranlog.so \
+    vendor/infinix/x6886/proprietary/vendor/lib64/hw/tran_fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/tran_fingerprint.default.so \
+    vendor/infinix/x6886/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so \
+    vendor/infinix/x6886/proprietary/vendor/lib64/vendor.transsion.hardware.biometrics.fingerprint-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.transsion.hardware.biometrics.fingerprint-V1-ndk.so \
+    vendor/infinix/x6886/proprietary/vendor/lib64/vendor.hardware.biometrics.extension.fingerprint-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.hardware.biometrics.extension.fingerprint-V1-ndk.so \
+    vendor/infinix/x6886/proprietary/vendor/lib64/android.hardware.biometrics.common-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.common-V3-ndk.so \
+    vendor/infinix/x6886/proprietary/vendor/lib64/android.hardware.biometrics.common.thread.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.common.thread.so \
+    vendor/infinix/x6886/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint-service \
+    vendor/infinix/x6886/proprietary/odm/lib64/hw/gf_fingerprint.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/gf_fingerprint.default.so \
+    vendor/infinix/x6886/proprietary/odm/lib64/libgf_hal.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal.so \
+    vendor/infinix/x6886/proprietary/odm/lib64/libvendor.transsion.hardware.biometrics.fingerprint.so:$(TARGET_COPY_OUT_ODM)/lib64/libvendor.transsion.hardware.biometrics.fingerprint.so \
+    vendor/infinix/x6886/proprietary/odm/etc/init/fingerprint-default.rc:$(TARGET_COPY_OUT_ODM)/etc/init/fingerprint-default.rc \
+    vendor/infinix/x6886/proprietary/odm/etc/init/vendor.goodix.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.goodix.rc \
+    vendor/infinix/x6886/proprietary/odm/etc/vintf/manifest/fingerprint-default.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest/fingerprint-default.xml \
+    vendor/infinix/x6886/proprietary/odm/etc/permissions/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.fingerprint.xml
+
 PRODUCT_PACKAGES += \
     av-audio-types-aidl-ndk_prebuilt \
     7816-3-T1 \
