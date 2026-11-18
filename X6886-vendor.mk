@@ -2191,7 +2191,7 @@ PRODUCT_PACKAGES += \
     libtrancam_jsonpraser \
     libtrm \
     libudf \
-    libultrahdr_CM6 \
+    libultrahdr_X6886 \
     libultrahdr_mtk \
     liburee_meta_drmkeyinstall \
     libvcodec_oal \
