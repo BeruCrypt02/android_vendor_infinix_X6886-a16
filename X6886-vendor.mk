@@ -3669,3 +3669,18 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libvcodecdrv_v3a_so \
     vendor_lib64_libvpudv3a_vcodec_so \
     vendor_lib64_mtkcam_libmtkcam_streaminfo_plugin-p1stt_so
+
+# Fingerprint stack (stock FOD) modules
+PRODUCT_PACKAGES += \
+    libtran_hal \
+    libtranlog \
+    tran_fingerprint.default \
+    android.hardware.biometrics.fingerprint-V3-ndk \
+    vendor.transsion.hardware.biometrics.fingerprint-V1-ndk \
+    vendor.hardware.biometrics.extension.fingerprint-V1-ndk \
+    android.hardware.biometrics.common-V3-ndk \
+    android.hardware.biometrics.common.thread \
+    gf_fingerprint.default \
+    libgf_hal \
+    libvendor.transsion.hardware.biometrics.fingerprint \
+    android.hardware.biometrics.fingerprint-service

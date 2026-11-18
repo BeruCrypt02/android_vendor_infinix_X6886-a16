@@ -53539,3 +53539,352 @@ install_symlink {
     installed_location: "lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so",
     symlink_target: "/vendor/lib64/mtkcam/mt6789/libmtkcam_streaminfo_plugin-p1stt.so",
 }
+
+# Fingerprint stack (stock FOD)
+cc_prebuilt_library_shared {
+    name: "libtran_hal",
+    owner: "infinix/x6886",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtran_hal.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libc++",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libhardware",
+                "libbinder_ndk",
+                "libbinder",
+                "libion",
+                "libmtkperf_client_vendor",
+                "libMcClient",
+                "libtranlog",
+                "libxml2",
+                "vendor.transsion.hardware.biometrics.fingerprint-V1-ndk",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtranlog",
+    owner: "infinix/x6886",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtranlog.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "tran_fingerprint.default",
+    owner: "infinix/x6886",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/tran_fingerprint.default.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libc++",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libhardware",
+                "libion",
+                "libtran_hal",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.biometrics.fingerprint-V3-ndk",
+    owner: "infinix/x6886",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.biometrics.common-V3-ndk",
+                "android.hardware.keymaster-V4-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.transsion.hardware.biometrics.fingerprint-V1-ndk",
+    owner: "infinix/x6886",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.transsion.hardware.biometrics.fingerprint-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.hardware.biometrics.extension.fingerprint-V1-ndk",
+    owner: "infinix/x6886",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.hardware.biometrics.extension.fingerprint-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.biometrics.common-V3-ndk",
+    owner: "infinix/x6886",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.biometrics.common-V3-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.biometrics.common.thread",
+    owner: "infinix/x6886",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.biometrics.common.thread.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "gf_fingerprint.default",
+    owner: "infinix/x6886",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/hw/gf_fingerprint.default.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libdl",
+                "libion",
+                "libcutils",
+                "libutils",
+                "libhardware",
+                "libhidlbase",
+                "libc++",
+                "libbinder_ndk",
+                "libm",
+                "libgf_hal",
+                "libvendor.transsion.hardware.biometrics.fingerprint",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgf_hal",
+    owner: "infinix/x6886",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libgf_hal.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libdl",
+                "libion",
+                "libcutils",
+                "libutils",
+                "libhardware",
+                "libhidlbase",
+                "libc++",
+                "libbinder_ndk",
+                "libm",
+                "libvendor.transsion.hardware.biometrics.fingerprint",
+                "libMcClient",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvendor.transsion.hardware.biometrics.fingerprint",
+    owner: "infinix/x6886",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libvendor.transsion.hardware.biometrics.fingerprint.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libbinder_ndk",
+                "libc",
+                "libm",
+                "libdl",
+                "liblog",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.biometrics.fingerprint-service",
+    owner: "infinix/x6886",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint-service",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libhardware",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "android.hardware.biometrics.fingerprint-V3-ndk",
+                "android.hardware.biometrics.common-V3-ndk",
+                "vendor.hardware.biometrics.extension.fingerprint-V1-ndk",
+                "android.hardware.biometrics.common.thread",
+                "libtranlog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
