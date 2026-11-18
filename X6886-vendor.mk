@@ -3666,10 +3666,10 @@ PRODUCT_PACKAGES += \
     libtran_hal \
     libtranlog \
     tran_fingerprint.default \
-    android.hardware.biometrics.fingerprint-V3-ndk \
+    x6886_biometrics_fingerprint_V3_ndk \
     vendor.transsion.hardware.biometrics.fingerprint-V1-ndk \
     vendor.hardware.biometrics.extension.fingerprint-V1-ndk \
-    android.hardware.biometrics.common-V3-ndk \
+    x6886_biometrics_common_V3_ndk \
     x6886_biometrics_common_thread \
     gf_fingerprint.default \
     libgf_hal \

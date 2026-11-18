@@ -53637,7 +53637,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.biometrics.fingerprint-V3-ndk",
+    name: "x6886_biometrics_fingerprint_V3_ndk",
     owner: "infinix/x6886",
     strip: {
         none: true,
@@ -53649,7 +53649,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbinder_ndk",
-                "android.hardware.biometrics.common-V3-ndk",
+                "x6886_biometrics_common_V3_ndk",
                 "android.hardware.keymaster-V4-ndk",
                 "libc++",
                 "libc",
@@ -53714,7 +53714,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.biometrics.common-V3-ndk",
+    name: "x6886_biometrics_common_V3_ndk",
     owner: "infinix/x6886",
     strip: {
         none: true,
@@ -53869,8 +53869,8 @@ cc_prebuilt_binary {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "android.hardware.biometrics.fingerprint-V3-ndk",
-                "android.hardware.biometrics.common-V3-ndk",
+                "x6886_biometrics_fingerprint_V3_ndk",
+                "x6886_biometrics_common_V3_ndk",
                 "vendor.hardware.biometrics.extension.fingerprint-V1-ndk",
                 "x6886_biometrics_common_thread",
                 "libtranlog",
