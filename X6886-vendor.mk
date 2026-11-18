@@ -3670,7 +3670,7 @@ PRODUCT_PACKAGES += \
     vendor.transsion.hardware.biometrics.fingerprint-V1-ndk \
     vendor.hardware.biometrics.extension.fingerprint-V1-ndk \
     android.hardware.biometrics.common-V3-ndk \
-    android.hardware.biometrics.common.thread \
+    x6886_biometrics_common_thread \
     gf_fingerprint.default \
     libgf_hal \
     libvendor.transsion.hardware.biometrics.fingerprint \
