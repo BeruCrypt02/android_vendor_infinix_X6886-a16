@@ -3109,7 +3109,6 @@ PRODUCT_PACKAGES += \
     libTranMegFusion \
     libTranfacOverlay \
     libTransNS \
-    libTransRecNS \
     libTranssionTone \
     libVideoSpotEngine_gl \
     lib_aimoon \
@@ -3129,25 +3128,19 @@ PRODUCT_PACKAGES += \
     libcolorenhance_64 \
     libcolorlevel \
     libcustom_nvram \
-    libdlrmsc \
     libeffect_hal \
     libeyedetector \
     libfacerepairmodel \
     libfacesattribute \
-    libfsmaudio \
     libitdfacebeauty \
     libmagicsky_64 \
     libmorpho_HDSR \
     libmorpho_MotionSensor \
     libmpbase \
-    liboissr \
-    liboissr_v3 \
     libpixsmart_hdr \
     libpixsmart_mf_base \
     libpixsmart_mf_base2 \
     libpixsmart_ns \
-    libremosaic_wrapper \
-    libremosaiclib \
     libsegmention \
     libsegmentionPre \
     libsmartdetector \
@@ -3205,7 +3198,6 @@ PRODUCT_PACKAGES += \
     libaiworks_video_hdr \
     libcam.hal3a.v3.tran.cusawb \
     libcam.hal3a.v3.tran.fyawb \
-    libcameracustom.plugin \
     libcameracustom \
     libyuvenhance \
     s5kgn5spcl6_mipi_raw_IdxMgr \
@@ -3240,7 +3232,6 @@ PRODUCT_PACKAGES += \
     mtk_lbs_service.xml \
     vendor.transsion.hardware.trancam.trancamserver.xml \
     ArcPDC.bin \
-    nfc2-service-nxp.xml \
     manifest_dsds.xml \
     manifest_qsqs.xml \
     manifest_ss.xml \
