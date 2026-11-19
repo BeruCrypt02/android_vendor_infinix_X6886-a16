@@ -1080,7 +1080,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/x6886/proprietary/vendor/etc/init/init.md_apps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.md_apps.rc \
     vendor/infinix/x6886/proprietary/vendor/etc/init/init.otg.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.otg.rc \
     vendor/infinix/x6886/proprietary/vendor/etc/init/init.thn31.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thn31.nfc.rc \
-    vendor/infinix/x6886/proprietary/vendor/etc/init/init.touch.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch.rc \
     vendor/infinix/x6886/proprietary/vendor/etc/init/init.tp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.tp.rc \
     vendor/infinix/x6886/proprietary/vendor/etc/init/init.volte_imcb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_imcb.rc \
     vendor/infinix/x6886/proprietary/vendor/etc/init/init.volte_imsm_93.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_imsm_93.rc \
@@ -1410,23 +1409,11 @@ PRODUCT_COPY_FILES += \
 
 
 # Fingerprint stack (stock FOD), added 2026-11-18
+# Libraries and binaries are installed via PRODUCT_PACKAGES (cc_prebuilt_* modules).
 PRODUCT_COPY_FILES += \
-    vendor/infinix/x6886/proprietary/vendor/lib64/libtran_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtran_hal.so \
-    vendor/infinix/x6886/proprietary/vendor/lib64/libtranlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranlog.so \
-    vendor/infinix/x6886/proprietary/vendor/lib64/hw/tran_fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/tran_fingerprint.default.so \
-    vendor/infinix/x6886/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so \
-    vendor/infinix/x6886/proprietary/vendor/lib64/vendor.transsion.hardware.biometrics.fingerprint-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.transsion.hardware.biometrics.fingerprint-V1-ndk.so \
-    vendor/infinix/x6886/proprietary/vendor/lib64/vendor.hardware.biometrics.extension.fingerprint-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.hardware.biometrics.extension.fingerprint-V1-ndk.so \
-    vendor/infinix/x6886/proprietary/vendor/lib64/android.hardware.biometrics.common-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.common-V3-ndk.so \
-    vendor/infinix/x6886/proprietary/vendor/lib64/android.hardware.biometrics.common.thread.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.common.thread.so \
-    vendor/infinix/x6886/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint-service \
-    vendor/infinix/x6886/proprietary/odm/lib64/hw/gf_fingerprint.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/gf_fingerprint.default.so \
-    vendor/infinix/x6886/proprietary/odm/lib64/libgf_hal.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal.so \
-    vendor/infinix/x6886/proprietary/odm/lib64/libvendor.transsion.hardware.biometrics.fingerprint.so:$(TARGET_COPY_OUT_ODM)/lib64/libvendor.transsion.hardware.biometrics.fingerprint.so \
     vendor/infinix/x6886/proprietary/odm/etc/init/fingerprint-default.rc:$(TARGET_COPY_OUT_ODM)/etc/init/fingerprint-default.rc \
     vendor/infinix/x6886/proprietary/odm/etc/init/vendor.goodix.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.goodix.rc \
-    vendor/infinix/x6886/proprietary/odm/etc/vintf/manifest/fingerprint-default.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest/fingerprint-default.xml \
-    vendor/infinix/x6886/proprietary/odm/etc/permissions/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.fingerprint.xml
+    vendor/infinix/x6886/proprietary/odm/etc/vintf/manifest/fingerprint-default.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest/fingerprint-default.xml
 
 PRODUCT_PACKAGES += \
     av-audio-types-aidl-ndk_prebuilt \

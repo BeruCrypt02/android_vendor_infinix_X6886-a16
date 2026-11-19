@@ -797,6 +797,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "x6886_bt_audio_impl_2_0",
+    stem: "android.hardware.bluetooth.audio@2.0-impl",
     owner: "infinix/x6886",
     strip: {
         none: true,
@@ -831,6 +832,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "x6886_bt_audio_impl_2_1",
+    stem: "android.hardware.bluetooth.audio@2.1-impl",
     owner: "infinix/x6886",
     strip: {
         none: true,
@@ -53638,6 +53640,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "x6886_biometrics_fingerprint_V3_ndk",
+    stem: "android.hardware.biometrics.fingerprint-V3-ndk",
     owner: "infinix/x6886",
     strip: {
         none: true,
@@ -53715,6 +53718,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "x6886_biometrics_common_V3_ndk",
+    stem: "android.hardware.biometrics.common-V3-ndk",
     owner: "infinix/x6886",
     strip: {
         none: true,
@@ -53740,6 +53744,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "x6886_biometrics_common_thread",
+    stem: "android.hardware.biometrics.common.thread",
     owner: "infinix/x6886",
     strip: {
         none: true,
