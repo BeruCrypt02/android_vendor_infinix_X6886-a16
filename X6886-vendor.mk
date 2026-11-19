@@ -2541,7 +2541,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.gpuserv-V2-ndk \
     vendor.mediatek.hardware.graphics-V1-ndk \
     vendor.mediatek.hardware.lbs-V1-ndk \
-    vendor.mediatek.hardware.lbs@1.0 \
     vendor.mediatek.hardware.mbrain-V6-ndk \
     vendor.mediatek.hardware.mmagent-V1-ndk \
     vendor.mediatek.hardware.mmagent@1.0 \
@@ -2568,7 +2567,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.voice-V1-ndk \
     vendor.mediatek.hardware.netdagent-V1-ndk \
-    vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.neuropilot.agent-V1-ndk \
     vendor.mediatek.hardware.neuropilot.agent@1.0 \
     vendor.mediatek.hardware.neuropilot.agent@1.1 \
