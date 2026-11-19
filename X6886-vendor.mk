@@ -1455,8 +1455,8 @@ PRODUCT_PACKAGES += \
     libMEOW_trace \
     libGLES_mali \
     android.hardware.audio.effect.aidl-impl-mediatek \
-    android.hardware.bluetooth.audio@2.0-impl \
-    android.hardware.bluetooth.audio@2.1-impl \
+    x6886_bt_audio_impl_2_0 \
+    x6886_bt_audio_impl_2_1 \
     android.hardware.gnss-impl-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
     android.hardware.soundtrigger3-impl \

@@ -796,7 +796,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth.audio@2.0-impl",
+    name: "x6886_bt_audio_impl_2_0",
     owner: "infinix/x6886",
     strip: {
         none: true,
@@ -830,7 +830,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth.audio@2.1-impl",
+    name: "x6886_bt_audio_impl_2_1",
     owner: "infinix/x6886",
     strip: {
         none: true,
