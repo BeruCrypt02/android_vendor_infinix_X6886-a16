@@ -3660,3 +3660,9 @@ PRODUCT_PACKAGES += \
     libgf_hal \
     libvendor.transsion.hardware.biometrics.fingerprint \
     android.hardware.biometrics.fingerprint-service
+
+# NXP NFC / MTK power packages restored from stock blobs
+PRODUCT_PACKAGES += \
+    vendor.nxp.nxpese@1.0 \
+    vendor.nxp.nxpnfc_aidl-V1-ndk \
+    vendor.mediatek.hardware.mtkpower-V2-ndk

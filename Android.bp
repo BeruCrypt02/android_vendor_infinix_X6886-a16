@@ -373,7 +373,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/android.hardware.audio.core-impl-mediatek.so",
             ],
             shared_libs: [
-                "libaudioutils_shim",
                 "android.hardware.bluetooth.audio-V5-ndk",
                 "android.hardware.audio.core.sounddose-V3-ndk",
                 "android.hardware.audio.core-V3-ndk",
@@ -53836,6 +53835,51 @@ cc_prebuilt_binary {
     strip: {
         none: true,
     },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.nxp.nxpese@1.0",
+    owner: "infinix/x6886",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/odm/lib64/vendor.nxp.nxpese@1.0.so"],
+            shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.nxp.nxpnfc_aidl-V1-ndk",
+    owner: "infinix/x6886",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/vendor.nxp.nxpnfc_aidl-V1-ndk.so"],
+            shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkpower-V2-ndk",
+    owner: "infinix/x6886",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower-V2-ndk.so"],
+            shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl"],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
